@@ -42,7 +42,6 @@ public class TodoController {
 
     @GetMapping("/data")
     public Person data() {
-//        return context.getBean("dataFromP", String.class);
         return context.getBean(Person.class);
     }
 

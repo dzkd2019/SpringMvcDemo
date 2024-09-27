@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * @author mrawa_ltf
  */
-@PropertySource("classpath:/application.properties")
+@PropertySource("classpath:application.properties")
 @Configuration
 @ComponentScan("org.example")
 @EnableWebMvc

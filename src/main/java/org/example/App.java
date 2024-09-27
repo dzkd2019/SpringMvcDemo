@@ -19,13 +19,14 @@ public class App implements WebApplicationInitializer
 {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-        AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.register(WebConfig.class);
-
-        servletContext.addListener(new ContextLoaderListener(context));
-        var appServlet = servletContext.addServlet("mvc", new DispatcherServlet(new GenericWebApplicationContext()));
-
-        appServlet.setLoadOnStartup(1);
-        appServlet.addMapping("/");
+//        AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
+//        context.register(WebConfig.class);
+//
+//        servletContext.addListener(new ContextLoaderListener(context));
+//
+//
+//        var appServlet = servletContext.addServlet("dispatcher", new DispatcherServlet((context)));
+//        appServlet.setLoadOnStartup(1);
+//        appServlet.addMapping("/");
     }
 }
